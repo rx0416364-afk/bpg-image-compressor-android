@@ -1,6 +1,6 @@
 # BPG Image Compressor untuk Android
 
-Proyek aplikasi Android minimalis untuk mengompres satu gambar menjadi format **BPG (`.bpg`)** secara offline. Encoder menggunakan sumber `libbpg` dan `x265` dari arsip yang diberikan.
+Aplikasi Android minimalis untuk mengompres gambar menjadi format **BPG (`.bpg`)** secara offline. Encoder menggunakan `libbpg` dan `x265` langsung di perangkat.
 
 ## Fitur
 
@@ -24,7 +24,7 @@ Gambar dikonversi ke YCbCr 8-bit 4:2:0 dan dikodekan sebagai gambar BPG statis. 
 - Android Gradle Plugin: `8.7.3`.
 - Gradle: `8.9`.
 
-Arsip sumber yang diberikan menggunakan versi libbpg/x265 yang relatif lama. Penghubung JNI dan konfigurasi CMake sudah disiapkan, tetapi APK Android tetap perlu diverifikasi melalui Android SDK/NDK. Lingkungan pembuatan paket sumber ini tidak memiliki Android SDK/NDK, sehingga **APK belum disertakan**.
+Kode `libbpg` dan `x265` yang digunakan berasal dari versi upstream yang relatif lama. Integrasi JNI dan konfigurasi CMake telah disiapkan untuk Android. APK debug dapat diunduh sebagai artifact dari workflow GitHub Actions setelah build berhasil.
 
 ## Membuat APK melalui GitHub Actions
 
